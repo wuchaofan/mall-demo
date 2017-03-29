@@ -58,7 +58,6 @@
           // observeParents: true,
           // debugger: true,
           onTransitionStart (swiper) {
-            console.log(swiper)
           }
         }
       }

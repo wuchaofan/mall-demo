@@ -11,13 +11,16 @@ export default {
 </script>
 
 <style>
+body{
+  background-color: #e7e7e7;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 1300px;
+  min-height: 1300px;
 }
 
 a{

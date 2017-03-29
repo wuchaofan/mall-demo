@@ -1,6 +1,6 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper">
-    <swiper-slide v-for="item in tips">
+    <swiper-slide v-for="(item, key) in tips">
       <a href="#" class="tips-a">
         <div class="title">
           {{item.title}}
@@ -22,9 +22,7 @@ export default {
         autoplay: 2200,
         loop: true,
         direction: 'vertical',
-        pagination: '.swiper-pagination',
         onTransitionStart (swiper) {
-          console.log(swiper)
         }
       },
       tips: [
