@@ -1,6 +1,6 @@
-# tmall
+# mall
 
-> A Vue.js project
+> A Vue.js project like mall
 
 ## Build Setup
 
