@@ -1,6 +1,9 @@
 <template>
   <div class="muen-list">
-    <div v-for="(item,key) in types" :key="key"><p>{{item}}</p></div>
+    <div v-for="(item,key) in types"
+     :key="key"
+     @click="selecttype(item,key)"
+     :class="['typeitem',{'typeitem-selected': isselected == key}]"><p>{{item}}</p></div>
   </div>
 </template>
 
@@ -9,6 +12,7 @@ export default {
   name: 'TypesList',
   data () {
     return {
+      isselected: -1,
       types: [
         '为您推荐',
         '国际大牌',
@@ -40,6 +44,11 @@ export default {
         '乐器'
       ]
     }
+  },
+  methods: {
+    selecttype (item, key) {
+      this.isselected = key
+    }
   }
 }
 </script>
@@ -51,8 +60,9 @@ export default {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  flex-shrink: 0;
 }
-.muen-list > div{
+.typeitem{
   flex-basis: 60px;
   background-color: inherit;
   flex-shrink: 0;
@@ -62,5 +72,9 @@ export default {
   font-size: 17px;
   border-bottom: 1px solid #E1E1E1;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.typeitem-selected{
+  background-color: white;
 }
 </style>

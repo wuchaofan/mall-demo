@@ -8,6 +8,15 @@
       <div class="left-menu">
         <types-list></types-list>
         <div class="muen-goods">
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
+          <type-kinda></type-kinda>
 
         </div>
       </div>
@@ -23,6 +32,7 @@
 <script>
 
 import TypesList from './TypesList.vue'
+import TypeKinda from './TypeKinda.vue'
 
 export default {
   name: 'GoodsTypes',
@@ -42,7 +52,8 @@ export default {
   },
   props: ['show'],
   components: {
-    TypesList
+    TypesList,
+    TypeKinda
   }
 }
 </script>
@@ -112,6 +123,9 @@ export default {
   transition: all .3s ease;
   transform: translate(-100%);
 
+}
+.muen-goods{
+  overflow: auto;
 }
 
 </style>
