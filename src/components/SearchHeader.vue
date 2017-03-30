@@ -1,13 +1,14 @@
 <template>
   <div class="header-flex">
     <div class="menu">
-      <a class="menu-icon" @click="showMenu=!showMenu"></a>
+      <a class="menu-icon" @click="showMenucall"></a>
     </div>
     <div class="search-box">
       <div class="bar">
         <p>搜索商品/店铺</p>
       </div>
       <div class="search-icon">
+
       </div>
     </div>
     <div class="menu">
@@ -25,7 +26,7 @@ export default {
   name: 'SearchHeader',
   data () {
     return {
-      showMenu: false
+      showMenu: true
     }
   },
   methods: {
