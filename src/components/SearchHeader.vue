@@ -1,7 +1,7 @@
 <template>
   <div class="header-flex">
     <div class="menu">
-      <a href="javascript:void(0);" class="menu-icon"></a>
+      <a class="menu-icon" @click="showMenu=!showMenu"></a>
     </div>
     <div class="search-box">
       <div class="bar">
@@ -13,17 +13,34 @@
     <div class="menu">
       <a href="javascript:void(0);" class="menu-user">登录</a>
     </div>
+    <goods-types :show="showMenu" @on-emnu-show="onEmuuShow"></goods-types>
   </div>
 </template>
 
 <script>
 
+import GoodsTypes from './goodstypes/GoodsTypes.vue'
+
 export default {
   name: 'SearchHeader',
   data () {
     return {
-      msg: 'SearchHeader'
+      showMenu: false
     }
+  },
+  methods: {
+    showMenucall () {
+      console.log(this.showMenu)
+      this.showMenu = !this.showMenu
+    },
+    onEmuuShow (val) {
+      this.showMenu = val
+    }
+  },
+  watch: {
+  },
+  components: {
+    GoodsTypes
   }
 }
 </script>

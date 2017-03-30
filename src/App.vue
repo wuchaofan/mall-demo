@@ -5,12 +5,19 @@
 </template>
 
 <script>
+
+import GoodsTypes from './components/goodstypes/GoodsTypes.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    GoodsTypes
+  }
 }
 </script>
 
 <style>
+html,body{ margin:0; padding:0; height:100%; width:100%; }
 body{
   background-color: #e7e7e7;
 }
