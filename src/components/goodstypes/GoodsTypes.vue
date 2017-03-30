@@ -42,6 +42,13 @@ export default {
       dyheight: window.innerHeight + 'px'
     }
   },
+  methods: {
+    onTypesScroll (e) {
+      console.log(e)
+      e.preventDefault()
+      e.stopPropagation()
+    }
+  },
   watch: {
     m_show (newval) {
       this.$emit('on-emnu-show', newval)

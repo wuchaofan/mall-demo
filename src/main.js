@@ -7,9 +7,11 @@ import App from './App'
 import router from './router'
 import './assets/css/weui.min.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import vScroll from 'vue-scroll'
 
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
+Vue.use(vScroll)
 
 /* eslint-disable no-new */
 new Vue({

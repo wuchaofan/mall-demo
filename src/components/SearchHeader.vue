@@ -1,5 +1,5 @@
 <template>
-  <div class="header-flex">
+  <div :class="['header-flex',{'header-bg': bgcolor}]">
     <div class="menu">
       <a class="menu-icon" @click="showMenucall"></a>
     </div>
@@ -26,19 +26,22 @@ export default {
   name: 'SearchHeader',
   data () {
     return {
-      showMenu: true
+      showMenu: false
     }
   },
   methods: {
     showMenucall () {
-      console.log(this.showMenu)
       this.showMenu = !this.showMenu
     },
     onEmuuShow (val) {
       this.showMenu = val
     }
   },
+  props: ['bgcolor'],
   watch: {
+    showMenu (newval) {
+      this.$emit('on-scroll-status', newval)
+    }
   },
   components: {
     GoodsTypes
@@ -47,6 +50,9 @@ export default {
 </script>
 
 <style scoped>
+.header-bg{
+  background: orangered !important;
+}
 .header-flex{
   height: 45px;
   display: flex;

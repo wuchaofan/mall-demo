@@ -1,7 +1,7 @@
 <template>
   <div>
-
-    <Search-header></Search-header>
+    <Search-header @on-scroll-status="scrollStatus"
+    :bgcolor="bgcolor"></Search-header>
     <swiper-ab></swiper-ab>
 
     <div class="weui-flex menu-flex">
@@ -162,14 +162,35 @@ export default {
       q2: { img: this.imagePath('box.webp'), title: '潮流酷玩' },
       q3: { img: this.imagePath('star.webp'), title: '品牌特卖' },
       q4: { img: this.imagePath('zixun.webp'), title: '品牌资讯' },
-      q5: { img: this.imagePath('lan.webp'), title: '便捷生活' }
-
+      q5: { img: this.imagePath('lan.webp'), title: '便捷生活' },
+      bgcolor: false
     }
   },
   methods: {
     imagePath (name) {
       return require('../assets/img/' + name)
+    },
+    scrollStatus (status) {
+      const body = document.getElementsByTagName('body')[0]
+      if (status) {
+        body.style.overflow = 'hidden'
+      } else {
+        body.style.overflow = 'auto'
+      }
+    },
+    onScroll (e) {
+      if (document.body.scrollTop > 40) {
+        this.bgcolor = true
+      } else {
+        this.bgcolor = false
+      }
     }
+  },
+  created () {
+    window.addEventListener('scroll', this.onScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.onScroll)
   },
   components: {
     SearchHeader,
@@ -233,4 +254,5 @@ export default {
   .life{
     height: 200px;
   }
+
 </style>
