@@ -1,6 +1,6 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper">
-    <swiper-slide v-for="(item, key) in tips">
+    <swiper-slide v-for="(item, key) in tips" :key="key">
       <a href="#" class="tips-a">
         <div class="title">
           {{item.title}}

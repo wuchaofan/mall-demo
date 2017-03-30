@@ -1,6 +1,10 @@
 <template>
   <div class="weui-flex">
-      <qiang-item v-for="item in datalist" :imgurl="item.img" :title="item.title"></qiang-item>
+      <qiang-item v-for="(item,index) in datalist"
+      :imgurl="item.img"
+      :title="item.title"
+      :key="index"
+      ></qiang-item>
   </div>
 </template>
 
