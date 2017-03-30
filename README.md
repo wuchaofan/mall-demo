@@ -2,6 +2,9 @@
 
 > A Vue.js project like mall
 
+# Screenshots
+![](home.png) ![](menu.png)
+
 ## Build Setup
 
 ``` bash
