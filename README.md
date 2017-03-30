@@ -6,6 +6,8 @@
 ![](home.png =200x400)
 ![](menu.png =200x400)
 
+<img src="./home.png" width="200" height="400">
+
 ## Build Setup
 
 ``` bash
