@@ -3,7 +3,8 @@
 > A Vue.js project like mall
 
 # Screenshots
-![](home.png) ![](menu.png)
+![](home.png =200x400)
+![](menu.png =200x400)
 
 ## Build Setup
 
