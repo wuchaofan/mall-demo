@@ -3,10 +3,8 @@
 > A Vue.js project like mall
 
 # Screenshots
-![](home.png =200x400)
-![](menu.png =200x400)
-
-<img src="./home.png" width="200" height="400">
+<img src="./home.png" width="220" height="380">
+<img src="./menu.png" width="220" height="380">
 
 ## Build Setup
 
