@@ -6,20 +6,23 @@
 
 <script>
 
-import GoodsTypes from './components/goodstypes/GoodsTypes.vue'
-
 export default {
   name: 'app',
   components: {
-    GoodsTypes
   }
 }
 </script>
 
 <style>
-html,body{ margin:0; padding:0; height:100%; width:100%; }
+html,body{
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+}
 body{
   background-color: #e7e7e7;
+  -webkit-overflow-scrolling: touch
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

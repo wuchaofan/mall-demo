@@ -62,7 +62,6 @@ export default {
 }
 .tips-a img{
   text-align: left;
-  color: red;
   height: 100%;
   width: 100%;
 }

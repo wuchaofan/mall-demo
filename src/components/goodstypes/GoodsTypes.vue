@@ -1,6 +1,6 @@
 <template>
   <transition name="leftshow">
-  <div class="goods" :style="{height: dyheight}" v-show="show">
+  <div class="goods" :style="{height: dyheight}" v-if="show">
     <div class="left">
       <div class="left-title">
         <p>全部分类</p>
@@ -38,8 +38,12 @@ export default {
   name: 'GoodsTypes',
   data () {
     return {
-      m_show: this.show,
-      dyheight: window.innerHeight + 'px'
+      m_show: this.show
+    }
+  },
+  computed: {
+    dyheight () {
+      return window.screen.height + 'px'
     }
   },
   methods: {
@@ -61,6 +65,10 @@ export default {
   components: {
     TypesList,
     TypeKinda
+  },
+  mounted () {
+    this.$nextTick(function () {
+    })
   }
 }
 </script>
@@ -71,16 +79,16 @@ export default {
   align-self: flex-start;
   flex-flow: 0;
   width: 100%;
-  flex-basis: 5%;
+  flex-basis: 50px;
   text-align: left;
   display: flex;
   align-items: center;
   padding-left: 10px;
   font-size: 16px;
+  flex-shrink: 0;
 }
 .left-menu{
   display: flex;
-  flex-basis: 95%;
   background-color: white;
 }
 .goods{
@@ -92,6 +100,7 @@ export default {
   top: 0;
   left: 0;
   display: flex;
+  overflow: hidden;
 }
 .left{
   flex-basis: 90%;
@@ -121,15 +130,17 @@ export default {
 .leftshow-enter{
   transition: all .3s ease;
   transform: translate(-100%);
+  -webkit-transform-style: preserve-3d;
 }
 .leftshow-enter-to{
   transition: all .3s ease;
   transform: translate(0);
+  -webkit-transform-style: preserve-3d;
 }
 .leftshow-leave-active{
   transition: all .3s ease;
   transform: translate(-100%);
-
+  -webkit-transform-style: preserve-3d;
 }
 .muen-goods{
   overflow: auto;
