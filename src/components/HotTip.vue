@@ -1,9 +1,9 @@
 <template>
   <div class="weui-flex">
     <div class="header-img">
-      <img src="../assets/img/hottip.webp" height="100%" width="54px">
+      <img src="../assets/img/hottip.png" height="100%" width="54px">
     </div>
-    <img src="../assets/img/vedio.webp" height="22px" width="22px">
+    <img src="../assets/img/vedio.png" height="22px" width="22px">
     <swiper-tip class="swiper-tip"></swiper-tip>
   </div>
 </template>

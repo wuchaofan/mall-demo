@@ -1,6 +1,11 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import 'lib-flexible'
+
+/* eslint-disable */
+
+//import './assets/js/webpjs-0.0.2.min.js'
+
+/* eslint-enable */
 
 import Vue from 'vue'
 import App from './App'

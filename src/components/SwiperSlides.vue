@@ -2,22 +2,22 @@
   <swiper :options="swiperOption" ref="mySwiper" class="swiper-slides">
     <swiper-slide>
       <a href="#" class="tips-a">
-        <img src="../assets/img/today.webp" alt="">
+        <img src="../assets/img/today.png" alt="">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#" class="tips-a">
-        <img src="../assets/img/today1.webp" alt="">
+        <img src="../assets/img/today1.png" alt="">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#" class="tips-a">
-        <img src="../assets/img/today2.webp" alt="">
+        <img src="../assets/img/today2.png" alt="">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#" class="tips-a">
-        <img src="../assets/img/today3.webp" alt="">
+        <img src="../assets/img/today3.png" alt="">
       </a>
     </swiper-slide>
     <div class="more">查看更多</div>

@@ -16,10 +16,10 @@ export default {
   data () {
     return {
       datalist: [
-        { title: '今日必抢', img: this.imagePath('qiang1.webp'), newval: 39, oldval: 78 },
-        { title: '趋势榜', img: this.imagePath('qtop.webp'), newval: 39, oldval: 78 },
-        { title: '进口必抢', img: this.imagePath('qjin.webp'), newval: 39, oldval: 78 },
-        { title: '巨超值', img: this.imagePath('qchip.webp'), newval: 39, oldval: 78 }
+        { title: '今日必抢', img: this.imagePath('qiang1.png'), newval: 39, oldval: 78 },
+        { title: '趋势榜', img: this.imagePath('qtop.png'), newval: 39, oldval: 78 },
+        { title: '进口必抢', img: this.imagePath('qjin.png'), newval: 39, oldval: 78 },
+        { title: '巨超值', img: this.imagePath('qchip.png'), newval: 39, oldval: 78 }
       ]
     }
   },

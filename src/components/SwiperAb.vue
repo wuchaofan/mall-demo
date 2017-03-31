@@ -3,37 +3,37 @@
     <!-- slides -->
     <swiper-slide>
       <a href="#">
-        <img class="sliderBanner" src="//gw.alicdn.com/imgextra/i3/17/TB2D2S6jmBjpuFjy1XdXXaooVXa_!!17-0-yamato.jpg_760x760Q30s0.jpg_.webp" width="100%">
+        <img class="sliderBanner" src="../assets/img/ada.png" width="100%">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#">
-        <img class="sliderBanner" src="//img.alicdn.com/tps/i4/TB1sMj8QXXXXXa0aXXXSutbFXXX.jpg_760x760Q30s0.jpg_.webp" width="100%">
+        <img class="sliderBanner" src="../assets/img/adb.png" width="100%">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#">
-        <img class="sliderBanner" src="//img.alicdn.com/bao/uploaded/TB1eICVPXXXXXXrXpXXSutbFXXX.jpg_760x760Q30s0.jpg_.webp" width="100%">
+        <img class="sliderBanner" src="../assets/img/adc.png" width="100%">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#">
-        <img class="sliderBanner" src="//gw.alicdn.com/imgextra/i3/17/TB2D2S6jmBjpuFjy1XdXXaooVXa_!!17-0-yamato.jpg_760x760Q30s0.jpg_.webp" width="100%">
+        <img class="sliderBanner" src="../assets/img/add.png" width="100%">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#">
-        <img class="sliderBanner" src="//gw.alicdn.com/imgextra/i3/17/TB2D2S6jmBjpuFjy1XdXXaooVXa_!!17-0-yamato.jpg_760x760Q30s0.jpg_.webp" width="100%">
+        <img class="sliderBanner" src="../assets/img/ada.png" width="100%">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#">
-        <img class="sliderBanner" src="//gw.alicdn.com/imgextra/i3/17/TB2D2S6jmBjpuFjy1XdXXaooVXa_!!17-0-yamato.jpg_760x760Q30s0.jpg_.webp" width="100%">
+        <img class="sliderBanner" src="../assets/img/adb.png" width="100%">
       </a>
     </swiper-slide>
     <swiper-slide>
       <a href="#">
-        <img class="sliderBanner" src="//gw.alicdn.com/imgextra/i3/17/TB2D2S6jmBjpuFjy1XdXXaooVXa_!!17-0-yamato.jpg_760x760Q30s0.jpg_.webp" width="100%">
+        <img class="sliderBanner" src="../assets/img/adc.png" width="100%">
       </a>
     </swiper-slide>
     <!-- Optional controls -->

@@ -3,29 +3,29 @@
     <p class="title"><span>女装</span></p>
     <div class="list">
       <a href="#" class="list-a">
-        <img src="../../assets/img/nz1.webp">
+        <img src="../../assets/img/nz1.png">
         <span>羽绒服</span>
       </a>
       <a href="#" class="list-a">
-        <img src="../../assets/img/nz2.webp">
+        <img src="../../assets/img/nz2.png">
         <span>棉衣</span>
       </a>
       <a href="#" class="list-a">
-        <img src="../../assets/img/nz3.webp">
+        <img src="../../assets/img/nz3.png">
         <span>毛呢外套</span>
       </a>
     </div>
     <div class="list">
       <a href="#" class="list-a">
-        <img src="../../assets/img/nz4.webp">
+        <img src="../../assets/img/nz4.png">
         <span>衬衫</span>
       </a>
       <a href="#" class="list-a">
-        <img src="../../assets/img/nz5.webp">
+        <img src="../../assets/img/nz5.png">
         <span>针织衫</span>
       </a>
       <a href="#" class="list-a">
-        <img src="../../assets/img/nz6.webp">
+        <img src="../../assets/img/nz6.png">
         <span>牛仔裤</span>
       </a>
     </div>
