@@ -90,6 +90,7 @@ export default {
 .left-menu{
   display: flex;
   background-color: white;
+  margin-bottom: 40px;
 }
 .goods{
   position: fixed;
